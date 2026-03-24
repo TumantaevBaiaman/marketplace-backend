@@ -1,0 +1,175 @@
+[
+  {
+    "id": "00000000-0000-0000-0000-000000000001",
+    "name": "Electronics",
+    "slug": "electronics",
+    "description": "Electronic devices and gadgets",
+    "icon_url": null,
+    "children": [
+      {
+        "id": "00000000-0000-0000-0000-000000000011",
+        "name": "Audio",
+        "slug": "audio",
+        "description": "Headphones, speakers, earbuds",
+        "icon_url": null
+      },
+      {
+        "id": "00000000-0000-0000-0000-000000000012",
+        "name": "Wearables",
+        "slug": "wearables",
+        "description": "Smart watches and fitness trackers",
+        "icon_url": null
+      },
+      {
+        "id": "00000000-0000-0000-0000-000000000013",
+        "name": "Cameras",
+        "slug": "cameras",
+        "description": "Action cameras, drones, VR headsets",
+        "icon_url": null
+      },
+      {
+        "id": "00000000-0000-0000-0000-000000000014",
+        "name": "TV & Video",
+        "slug": "tv-video",
+        "description": "Televisions and video equipment",
+        "icon_url": null
+      }
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000002",
+    "name": "Computer Accessories",
+    "slug": "computer-accessories",
+    "description": "Peripherals and PC components",
+    "icon_url": null,
+    "children": [
+      {
+        "id": "00000000-0000-0000-0000-000000000021",
+        "name": "Peripherals",
+        "slug": "peripherals",
+        "description": "Keyboards, mice, webcams",
+        "icon_url": null
+      },
+      {
+        "id": "00000000-0000-0000-0000-000000000022",
+        "name": "Storage",
+        "slug": "storage",
+        "description": "SSD drives and RAM modules",
+        "icon_url": null
+      },
+      {
+        "id": "00000000-0000-0000-0000-000000000023",
+        "name": "Networking",
+        "slug": "networking",
+        "description": "Routers, switches, adapters",
+        "icon_url": null
+      }
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000003",
+    "name": "Mobile & Gadgets",
+    "slug": "mobile-gadgets",
+    "description": "Phone accessories and portable gadgets",
+    "icon_url": null,
+    "children": [
+      {
+        "id": "00000000-0000-0000-0000-000000000031",
+        "name": "Phone Accessories",
+        "slug": "phone-accessories",
+        "description": "Cases, screen protectors, stands",
+        "icon_url": null
+      },
+      {
+        "id": "00000000-0000-0000-0000-000000000032",
+        "name": "Power",
+        "slug": "power",
+        "description": "Power banks, chargers, hubs",
+        "icon_url": null
+      },
+      {
+        "id": "00000000-0000-0000-0000-000000000033",
+        "name": "Drones & VR",
+        "slug": "drones-vr",
+        "description": "Drones, VR headsets, action cams",
+        "icon_url": null
+      }
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000004",
+    "name": "Smart Home",
+    "slug": "smart-home",
+    "description": "Smart home devices and automation",
+    "icon_url": null,
+    "children": [
+      {
+        "id": "00000000-0000-0000-0000-000000000041",
+        "name": "Smart Lighting",
+        "slug": "smart-lighting",
+        "description": "Smart bulbs and lighting systems",
+        "icon_url": null
+      },
+      {
+        "id": "00000000-0000-0000-0000-000000000042",
+        "name": "Smart Security",
+        "slug": "smart-security",
+        "description": "Cameras, locks, alarms",
+        "icon_url": null
+      }
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000005",
+    "name": "Clothing",
+    "slug": "clothing",
+    "description": "Apparel for all ages",
+    "icon_url": null,
+    "children": [
+      {
+        "id": "00000000-0000-0000-0000-000000000051",
+        "name": "Men",
+        "slug": "men",
+        "description": "Clothing for men",
+        "icon_url": null
+      },
+      {
+        "id": "00000000-0000-0000-0000-000000000052",
+        "name": "Women",
+        "slug": "women",
+        "description": "Clothing for women",
+        "icon_url": null
+      },
+      {
+        "id": "00000000-0000-0000-0000-000000000053",
+        "name": "Kids",
+        "slug": "kids",
+        "description": "Clothing for children",
+        "icon_url": null
+      }
+    ]
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000006",
+    "name": "Sports & Outdoors",
+    "slug": "sports-outdoors",
+    "description": "Sports equipment and outdoor gear",
+    "icon_url": null,
+    "children": [
+      {
+        "id": "00000000-0000-0000-0000-000000000061",
+        "name": "Fitness",
+        "slug": "fitness",
+        "description": "Gym equipment and fitness accessories",
+        "icon_url": null
+      },
+      {
+        "id": "00000000-0000-0000-0000-000000000062",
+        "name": "Outdoor",
+        "slug": "outdoor",
+        "description": "Camping, hiking, and outdoor gear",
+        "icon_url": null
+      }
+    ]
+  }
+]
