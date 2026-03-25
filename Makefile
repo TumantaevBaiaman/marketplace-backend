@@ -1,14 +1,17 @@
-.PHONY: help install run dev check-services \
+.PHONY: help setup install run dev check-services \
         migrate migrate-create migrate-down migrate-history \
         lint format check seed \
         test test-cov
 
 # ── Config ────────────────────────────────────────────────────────────────────
-include .env
+-include .env
 export
 
 # ── Help ──────────────────────────────────────────────────────────────────────
 help:
+	@echo ""
+	@echo "  Setup"
+	@echo "    make setup            — создать .env из .env.example"
 	@echo ""
 	@echo "  App"
 	@echo "    make install          — установить зависимости"
@@ -32,6 +35,24 @@ help:
 	@echo "    make format-check     — ruff format --check"
 	@echo "    make check            — lint + format-check"
 	@echo ""
+
+# ── Setup ─────────────────────────────────────────────────────────────────────
+setup:
+	@if [ -f .env ]; then \
+		echo "[SKIP] .env уже существует. Запускай: make install && make dev"; \
+	else \
+		cp .env.example .env; \
+		echo "[OK] .env создан из .env.example"; \
+		echo ""; \
+		echo "  Заполни обязательные значения в .env:"; \
+		echo "    DB__USER      — пользователь PostgreSQL (из marketplace-stack .env.local: POSTGRES_USER)"; \
+		echo "    DB__PASSWORD  — пароль PostgreSQL       (из marketplace-stack .env.local: POSTGRES_PASSWORD)"; \
+		echo "    MINIO__ACCESS_KEY — логин MinIO         (из marketplace-stack .env.local: MINIO_ROOT_USER)"; \
+		echo "    MINIO__SECRET_KEY — пароль MinIO        (из marketplace-stack .env.local: MINIO_ROOT_PASSWORD)"; \
+		echo "    JWT__SECRET_KEY   — секрет JWT          (из marketplace-stack .env.local: JWT_SECRET_KEY)"; \
+		echo ""; \
+		echo "  Затем: make install && make dev"; \
+	fi
 
 # ── Service health checks ─────────────────────────────────────────────────────
 check-services:
