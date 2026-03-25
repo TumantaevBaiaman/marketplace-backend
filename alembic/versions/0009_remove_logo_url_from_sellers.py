@@ -13,9 +13,8 @@ depends_on = None
 
 
 def upgrade() -> None:
-    op.drop_column('sellers', 'logo_url')
+    pass  # logo_url was removed before this migration was created
 
 
 def downgrade() -> None:
-    import sqlalchemy as sa
-    op.add_column('sellers', sa.Column('logo_url', sa.String(500), nullable=True))
+    pass

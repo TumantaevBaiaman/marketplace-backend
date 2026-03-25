@@ -13,11 +13,8 @@ depends_on = None
 
 
 def upgrade() -> None:
-    op.drop_column('products', 'brand')
-    op.drop_column('products', 'weight')
+    pass  # columns brand/weight were removed before this migration was created
 
 
 def downgrade() -> None:
-    import sqlalchemy as sa
-    op.add_column('products', sa.Column('brand', sa.String(200), nullable=True))
-    op.add_column('products', sa.Column('weight', sa.Numeric(10, 3), nullable=True))
+    pass
